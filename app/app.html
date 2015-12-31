@@ -1,30 +1,30 @@
 <!doctype html>
-<html>
+<html ng-app="d3-desktop">
 <head>
     <meta charset="utf-8">
     <title>D3 Desktop</title>
-
+    <!-- Vendor/Application styles -->
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link href="./stylesheets/main.css" rel="stylesheet" type="text/css">
     <link href="./vendor/angular-material/angular-material.min.css" rel="stylesheet" type="text/css">
-
+    <!-- Electron helpers -->
     <script src="vendor/electron_boilerplate/context_menu.js"></script>
     <script src="vendor/electron_boilerplate/external_links.js"></script>
-
+    <!-- Vendor js -->
     <script src="vendor/angular/angular.min.js"></script>
     <script src="vendor/angular-animate/angular-animate.min.js"></script>
     <script src="vendor/angular-aria/angular-aria.min.js"></script>
     <script src="vendor/angular-messages/angular-messages.min.js"></script>
     <script src="vendor/angular-material/angular-material.min.js"></script>
-
+    <script src="vendor/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <!-- Load the application module -->
     <script src="scripts/app.module.js"></script>
-    <script src="scripts/shell.controller.js"></script>
+    <!-- Load the application services -->
+    <script src="scripts/services/battlenet.service.js"></script>
+    <!-- Load the application controllers -->
+    <script src="scripts/compare/compare.controller.js"></script>
 </head>
-<body ng-app="d3-desktop">
-
-  <div ng-controller="ShellController as shell">
-    {{shell.message}}
-  </div>
-
+<body>
+  <div ui-view></div>
 </body>
 </html>
