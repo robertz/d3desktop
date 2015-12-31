@@ -8,7 +8,7 @@ Desktop application for comparing your Diablo 3 heroes
 * Clone repository and cd to the directory
 * npm install
 * cd into the app/ directory
-* bower instal to download dependencies
+* bower install to download dependencies
 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
