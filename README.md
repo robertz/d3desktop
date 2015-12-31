@@ -3,6 +3,14 @@ d3-desktop
 Desktop application for comparing your Diablo 3 heroes
 
 
+### Installation
+
+* Clone repository and cd to the directory
+* npm init
+* cd into the app/ directory
+* bower init to download dependencies
+
+
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
