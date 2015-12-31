@@ -5,6 +5,14 @@
     'ui.router',
     'ngMaterial'
   ])
+  .constant('classNames', {
+    'barbarian': 'Barbarian',
+    'crusader': 'Crusader',
+    'demon-hunter': 'Demon Hunter',
+    'monk': 'Monk',
+    'witch-doctor': 'Witch Doctor',
+    'wizard': 'Wizard'
+  })
   .config(function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider
       .otherwise('/compare');
@@ -16,7 +24,7 @@
         controller: 'CompareController',
         controllerAs: 'cc'
       });
-      
+
   })
   .run(function($rootScope, $state, $stateParams) {
     $rootScope.$state = $state;

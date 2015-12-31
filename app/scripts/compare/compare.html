@@ -3,26 +3,45 @@
     <md-toolbar>
       <div class="md-toolbar-tools">
         <span flex></span>
-        <md-button class="md-raised">Load</md-button>
+        <md-button class="md-raised" ng-click="cc.loadLeftAccount()">Load</md-button>
         <span flex></span>
       </div>
     </md-toolbar>
+
     <md-input-container class="md-block">
       <label>Battle.net ID</label>
       <input ng-model="cc.leftBnetID">
     </md-input-container>
+
+    <md-input-container class="md-block">
+      <md-select ng-model="cc.leftSelectedHero" ng-change="cc.loadLeftHero()" aria-label="Select Hero">
+        <md-option ng-repeat="hero in cc.leftCharacterData" value="{{hero.id}}">
+          {{hero.name}} Level {{hero.level}} {{cc.classNames[hero.class]}} Paragon Level ({{hero.paragonLevel}})
+        </md-option>
+      </md-select>
+    </md-input-container>
+
   </div>
   <div flex="50">
     <md-toolbar>
       <div class="md-toolbar-tools">
         <span flex></span>
-        <md-button class="md-raised">Load</md-button>
+        <md-button class="md-raised" ng-click="cc.loadRightAccount()">Load</md-button>
         <span flex></span>
       </div>
     </md-toolbar>
+
     <md-input-container class="md-block">
       <label>Battle.net ID</label>
       <input ng-model="cc.rightBnetID">
+    </md-input-container>
+
+    <md-input-container class="md-block">
+      <md-select ng-model="cc.rightSelectedHero" ng-change="cc.loadRightHero()" aria-label="Select Hero">
+        <md-option ng-repeat="hero in cc.rightCharacterData" value="{{hero.id}}">
+          {{hero.name}} Level {{hero.level}} {{cc.classNames[hero.class]}} Paragon Level ({{hero.paragonLevel}})
+        </md-option>
+      </md-select>
     </md-input-container>
   </div>
 </div>
