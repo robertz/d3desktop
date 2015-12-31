@@ -1,10 +1,10 @@
 {
-  "name": "electron-boilerplate",
-  "productName": "Electron Boilerplate",
-  "identifier": "com.example.electron-boilerplate",
-  "description": "Starter for your Electron application. Out of the box ready for serious stuff.",
+  "name": "d3desktop",
+  "productName": "D3 Hero Compare Desktop",
+  "identifier": "com.kisdigital.d3desktop",
+  "description": "Compare two Diablo 3 heroes on your desktop",
   "version": "0.1.0",
-  "author": "Mr Gumby",
+  "author": "Robert Zehnder",
   "main": "background.js",
   "dependencies": {
     "fs-jetpack": "^0.7.0"

@@ -2,26 +2,29 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Electron Boilerplate</title>
+    <title>D3 Desktop</title>
 
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link href="./stylesheets/main.css" rel="stylesheet" type="text/css">
+    <link href="./vendor/angular-material/angular-material.min.css" rel="stylesheet" type="text/css">
 
     <script src="vendor/electron_boilerplate/context_menu.js"></script>
     <script src="vendor/electron_boilerplate/external_links.js"></script>
 
-    <script src="app.js"></script>
-</head>
-<body>
+    <script src="vendor/angular/angular.min.js"></script>
+    <script src="vendor/angular-animate/angular-animate.min.js"></script>
+    <script src="vendor/angular-aria/angular-aria.min.js"></script>
+    <script src="vendor/angular-messages/angular-messages.min.js"></script>
+    <script src="vendor/angular-material/angular-material.min.js"></script>
 
-    <div class="container">
-        <h1 id="greet"></h1>
-        <p class="subtitle">
-            Welcome to <a href="http://electron.atom.io" class="js-external-link">Electron</a> app running on this magnificent <strong id="platform-info"></strong> machine.
-        </p>
-        <p class="subtitle">
-            You are in <strong id="env-name"></strong> environment.
-        </p>
-    </div>
+    <script src="scripts/app.module.js"></script>
+    <script src="scripts/shell.controller.js"></script>
+</head>
+<body ng-app="d3-desktop">
+
+  <div ng-controller="ShellController as shell">
+    {{shell.message}}
+  </div>
 
 </body>
 </html>

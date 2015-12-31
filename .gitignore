@@ -7,3 +7,7 @@ Thumbs.db
 /build/
 /releases/
 /tmp/
+
+/app/vendor/*
+!/app/vendor/electon-boilerplate
+!/app/vendor/jasmine
